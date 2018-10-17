@@ -3,8 +3,8 @@
     <!-- 1 -->
     <h4 v-if="loading">Loading...</h4>
     <link-item
-      v-for="link in posts"
-      :key="link.post_id"
+      v-for="link in books"
+      :key="link.id"
       :link="link">
     </link-item>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
   // 2
-  import { ALL_LINKS_QUERY } from '../constants/graphql'
+  import { ALL_BOOKS_QUERY } from '../constants/graphql'
   import LinkItem from './LinkItem'
 
   export default {
@@ -20,7 +20,7 @@
     data () {
       return {
         // 3
-        posts: [],
+        books: [],
         loading: 0
       }
     },
@@ -29,8 +29,8 @@
     },
     // 4
     apollo: {
-      posts: {
-        query: ALL_LINKS_QUERY
+      books: {
+        query: ALL_BOOKS_QUERY
       }
     }
   }

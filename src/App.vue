@@ -1,6 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="background">
+    <div >
+      <h1> Books I've Read</h1>
     <link-list></link-list>
+    </div>
   </div>
 </template>
 
@@ -19,8 +22,7 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, sans-serif;
-  }
+    font-family: Verdana, Geneva, sans-serif;  }
 
   input {
     max-width: 500px;
@@ -58,5 +60,15 @@
     border-color: buttonface;
     cursor: pointer;
     max-width: 250px;
+  }
+
+  .background {
+    background: #828282;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+    width: 50%;
+    height: 50%;
   }
 </style>
