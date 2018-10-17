@@ -2,18 +2,18 @@
   <div id="app" class="background">
     <div >
       <h1> Books I've Read</h1>
-    <link-list></link-list>
+    <book-list></book-list>
     </div>
   </div>
 </template>
 
 <script>
-  import LinkList from './components/LinkList'
+  import BookList from './components/BookList'
 
   export default {
     name: 'app',
     components: {
-      LinkList
+      BookList
     }
   }
 </script>

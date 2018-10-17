@@ -2,21 +2,21 @@
   <div>
     <!-- 1 -->
     <h4 v-if="loading">Loading...</h4>
-    <link-item
-      v-for="link in books"
-      :key="link.id"
-      :link="link">
-    </link-item>
+    <book-item
+      v-for="book in books"
+      :key="book.id"
+      :book="book">
+    </book-item>
   </div>
 </template>
 
 <script>
   // 2
   import { ALL_BOOKS_QUERY } from '../constants/graphql'
-  import LinkItem from './LinkItem'
+  import BookItem from './BookItem'
 
   export default {
-    name: 'LinkList',
+    name: 'BookList',
     data () {
       return {
         // 3
@@ -25,7 +25,7 @@
       }
     },
     components: {
-      LinkItem
+      BookItem
     },
     // 4
     apollo: {
