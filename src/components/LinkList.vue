@@ -5,7 +5,7 @@
     <link-item
       v-for="link in posts"
       :key="link.post_id"
-      :link="link.post_name">
+      :link="link">
     </link-item>
   </div>
 </template>

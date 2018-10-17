@@ -1,5 +1,5 @@
 <template>
-  <div>{{link.description}} ({{link.url}})</div>
+  <div>{{link.post_name}} by {{link.post_author}}</div>
 </template>
 
 <script>
