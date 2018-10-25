@@ -1,4 +1,5 @@
 # danvue
+This project changes quite a lot, keep track of it with the [blog](https://dev.to/malgamves) posts I write on it. 
 
 ## Project setup
 ```
