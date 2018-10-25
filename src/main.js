@@ -37,6 +37,9 @@ const apolloProvider = new VueApollo({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data:{
+    isHidden: false
+  },
   // 7
   apolloProvider,
   render: h => h(App)

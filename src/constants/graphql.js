@@ -10,4 +10,12 @@ export const ALL_BOOKS_QUERY = gql`
         name
     }
   }
-`
+`;
+
+export const ADD_BOOK_MUTATION = gql`
+    mutation addBook($author: String!, $name: String!){
+        insert_books(objects: [{name: $name, author: $author}]) {
+            affected_rows
+  }
+    }
+`;
