@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- 1 -->
     <h4 v-if="loading">Loading...</h4>
     <book-item
       v-for="book in books"
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-  // 2
   import { ALL_BOOKS_QUERY } from '../constants/graphql'
   import BookItem from './BookItem'
 
@@ -19,7 +17,6 @@
     name: 'BookList',
     data () {
       return {
-        // 3
         books: [],
         loading: 0
       }
@@ -27,7 +24,6 @@
     components: {
       BookItem
     },
-    // 4
     apollo: {
       books: {
         query: ALL_BOOKS_QUERY

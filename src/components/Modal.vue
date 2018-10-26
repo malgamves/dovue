@@ -61,7 +61,7 @@ export default {
               <button
                 type="button"
                 class="btn-green"
-                @click="addBook()"              >
+                @click="addBook()">
                 Add
             </button>
             <button
